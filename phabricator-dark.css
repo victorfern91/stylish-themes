@@ -1,0 +1,185 @@
+/** This file is compatible with JavaScript and Java Diffs.
+ *  @author Victor Fernanders <victorfern91@gmail.com>
+ *  2017
+ */
+
+/* Color definition */
+:root {
+  /* Base color */
+  --bg-color: #1d1f21;
+  --text-grey: #969896;
+  
+  /* Code Colors */
+  --comment-text-color: --txt-grey;
+  
+  /* Color with opacity */
+  --white-opac-30: rgba(255, 255, 255, 0.3);
+  --gray-opac-60:  rgba(103, 103, 103, 0.6);
+  --green-opac-20: rgba(51,  255,  51, 0.2);
+  --green-opac-10: rgba(51,  255,  51, 0.1);
+}
+
+/* Table Rows */
+.differential-diff td, .differential-diff tr {
+   background-color: var(--bg-color);
+   color: var(--text-grey);
+}
+
+/* Table Head */
+.differential-diff th {
+    background-color: var(--bg-color);
+    color: var(--white-opac-30);
+    border-right: 1px solid var(--gray-opac-60);
+}
+
+/* Diffs New Code */
+.differential-diff td.new span.bright, .differential-diff td.new-full, .prose-diff span.new {
+    background: var(--green-opac-20);
+}
+
+.differential-diff td.new, .differential-diff th.new-full {
+    background: var(--green-opac-10)
+}
+
+/* Comment text color */
+.remarkup-code .c, .remarkup-code .c1, .remarkup-code .cm, .remarkup-code .cs {
+    color: var(--comment-txt-color);
+}
+
+/* */
+.remarkup-code .bp,
+.remarkup-code .cp,
+.remarkup-code .kp,
+.remarkup-code .kr,
+.remarkup-code .nb,
+.remarkup-code .k,
+.remarkup-code .kd,
+.remarkup-code .kn,
+.remarkup-code .kc,
+.remarkup-code .no {
+    color: #b294bb;
+}
+
+.remarkup-code .nf,
+.remarkup-code .nx,
+.remarkup-code .na,
+.remarkup-code .nd {
+   color: #81a2be;   
+}
+
+
+/* */
+.remarkup-code .s,
+.remarkup-code .s1,
+.remarkup-code .s2,
+.remarkup-code .sb,
+.remarkup-code .sc,
+.remarkup-code .sx,
+span.err {
+    color: #b5bd68;
+}
+
+.remarkup-code.il,
+.remarkup-code .m,
+.remarkup-code .mf,
+.remarkup-code .mh,
+.remarkup-code .mi,
+.remarkup-code .mo {
+    color: #de935f;
+}
+
+/* */
+.remarkup-code .p,
+.remarkup-code .o {
+    color: #8abeb7;
+}
+
+/* */
+.phabricator-remarkup
+.remarkup-code-block pre {
+    background: #555;
+}
+
+.differential-diff td.show-more, .differential-diff th.show-context-line, .differential-diff td.show-context, .differential-diff td.differential-shield {
+    background: #F8F9FC;
+    padding: 8px 0;
+    border-top: none;
+    border-bottom: none;
+    color: rgba(255,255,255,0.3) !important;
+    background: rgba(255,255,255,0.1);
+    padding-left: 14px;
+    padding-right: 6px;
+}
+
+.differential-diff td.old {
+    background: rgba(255,51,51,0.2);
+}
+
+.differential-diff td.old span.bright, .differential-diff td.old-full, .prose-diff span.old {
+     background: rgba(255,51,51,0.25);
+}
+
+.differential-diff th.new {
+    background: #213b25;
+}
+
+.differential-diff th.new.selected {
+    background: #2d5433;
+}
+
+.differential-diff th.new.selected {
+    background: rgb(73, 92, 75);
+}
+
+td.copy.new:before {
+    content: "+";
+    color: #627165;
+    margin-left: 3px;
+}
+
+td.old:before {
+    content: "-";
+    color: rgb(124, 91, 89);
+}
+
+.remarkup-code .n {
+    color: #c5c8c6;
+}
+
+.remarkup-code .nc, .remarkup-code .nt, .remarkup-code .vc, .remarkup-code .kt {
+    color: #f0c674;
+}
+
+.show-more a {
+    color: #bfcfda;
+}
+
+.differential-reticle {
+    background-color: #fff;
+    opacity: 0.15;
+}
+
+.remarkup-code .si {
+    color: #f1c40f;
+}
+
+.differential-diff th.selected {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.differential-diff th.old {
+    border-right-color: rgba(251,175,175,.7);
+    background: #522426;
+}
+
+.phui-box.phui-box-border.phui-object-box.mlt.mll.mlr.phui-object-box-collapsed.phui-box-blue-property {
+    border: none;
+    background: transparent;
+}
+
+.differential-changeset.repository-crossreference {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: #fafafa;
+}
