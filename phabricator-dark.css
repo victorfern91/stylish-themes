@@ -54,10 +54,13 @@
 .remarkup-code .nb,
 .remarkup-code .k,
 .remarkup-code .kd,
-.remarkup-code .kn,
 .remarkup-code .kc,
 .remarkup-code .no {
     color: #b294bb;
+}
+
+.remarkup-code .kn {
+    color: #8abeb7;
 }
 
 .remarkup-code .nf,
@@ -146,7 +149,11 @@ td.old:before {
     color: #c5c8c6;
 }
 
-.remarkup-code .nc, .remarkup-code .nt, .remarkup-code .vc, .remarkup-code .kt {
+.remarkup-code .nc,
+.remarkup-code .nt,
+.remarkup-code .vc,
+.remarkup-code .kt,
+.remarkup-code .nn {
     color: #f0c674;
 }
 
