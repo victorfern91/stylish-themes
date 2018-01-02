@@ -115,6 +115,7 @@ span.err {
 }
 
 .differential-diff td.old {
+    padding-left: 1px;
     background: rgba(255,51,51,0.2);
 }
 
