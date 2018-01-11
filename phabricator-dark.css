@@ -25,7 +25,6 @@
    color: var(--text-grey);
 }
 
-/* Table Head */
 .differential-diff th {
     background-color: var(--bg-color);
     color: var(--white-opac-30);
@@ -33,7 +32,7 @@
 }
 
 /* Diffs New Code */
-.differential-diff td.new span.bright, .differential-diff td.new-full, .prose-diff span.new {
+.differential-diff td.new span.bright, .differential-diff td.new-full, .prose-diff span.new, .differential-diff td.new-rebase {
     background: var(--green-opac-20);
 }
 
@@ -119,7 +118,7 @@ span.err {
     background: rgba(255,51,51,0.2);
 }
 
-.differential-diff td.old span.bright, .differential-diff td.old-full, .prose-diff span.old {
+.differential-diff td.old span.bright, .differential-diff td.old-full, .prose-diff span.old, .differential-diff td.old-rebase {
      background: rgba(255,51,51,0.25);
 }
 
